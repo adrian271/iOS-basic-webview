@@ -14,6 +14,7 @@
 		3AECC48722FE766000A23519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AECC48522FE766000A23519 /* LaunchScreen.storyboard */; };
 		3AECC49222FE766000A23519 /* webviewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECC49122FE766000A23519 /* webviewTestTests.swift */; };
 		3AECC49D22FE766000A23519 /* webviewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECC49C22FE766000A23519 /* webviewTestUITests.swift */; };
+		3AECC4AC22FE7D5600A23519 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AECC4AB22FE7D5600A23519 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3AECC49822FE766000A23519 /* webviewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webviewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AECC49C22FE766000A23519 /* webviewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webviewTestUITests.swift; sourceTree = "<group>"; };
 		3AECC49E22FE766000A23519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AECC4AB22FE7D5600A23519 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AECC4AC22FE7D5600A23519 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				3AECC49022FE766000A23519 /* webviewTestTests */,
 				3AECC49B22FE766000A23519 /* webviewTestUITests */,
 				3AECC47A22FE765E00A23519 /* Products */,
+				3AECC4AA22FE7D5600A23519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				3AECC49E22FE766000A23519 /* Info.plist */,
 			);
 			path = webviewTestUITests;
+			sourceTree = "<group>";
+		};
+		3AECC4AA22FE7D5600A23519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AECC4AB22FE7D5600A23519 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D94SZ87BDM;
 				INFOPLIST_FILE = webviewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = apex.webviewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D94SZ87BDM;
 				INFOPLIST_FILE = webviewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = apex.webviewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
